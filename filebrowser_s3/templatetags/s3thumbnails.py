@@ -76,7 +76,7 @@ def thumbnail(image_url, width, height, upscale=True, quality=95, left=.5,
 
     terms = filter(None, [
         settings.MEDIA_URL.strip("/"),
-        settings.AWS_LOCATION, # this might be an empty string, hence filter()
+    #    settings.AWS_LOCATION, # this might be an empty string, hence filter()
         thumb_url,
     ])
 
